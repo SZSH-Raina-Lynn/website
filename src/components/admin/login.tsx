@@ -1,4 +1,5 @@
 "use client"
+import { Container, Box, Button, FormControl, InputLabel, InputAdornment,IconButton, InputBase, Typography } from "@mui/material";
 import { useState } from "react";
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
@@ -46,21 +47,27 @@ export default function Login() {
             value={admin.email}
           />
           <label htmlFor="admin_pw">密码</label>
-
-          <input
-            id="admin_pw"
-            placeholder="Password"
-            className="h-8 mb-4"
-            type={showPw ? 'text' : 'password'}
-            onChange={(e) => setAdmin({...admin, pw: e.target.value})}
-            value={admin.pw}
-          />
-
-
+          <div className="relative">
+            <input
+              id="admin_pw"
+              placeholder="Password"
+              className="h-8 mb-4"
+              type={showPw ? 'text' : 'password'}
+              onChange={(e) => setAdmin({...admin, pw: e.target.value})}
+              value={admin.pw}
+            />
+            <div
+              aria-label="toggle password visibility"
+              onClick={() => setShow(!showPw)}
+              className="cursor-pointer h-8 absolute inset-y-0 right-0 pr-3 flex items-center text-sm"
+            >
+              {showPw ? <VisibilityOff /> : <Visibility />}
+            </div>
+          </div>
           <div className="text-center">
             <input
               aria-label="login_submit"
-              className="font-extralight text-slate-50 border w-full bg-[#0362AA] hover:opacity-80 active:opacity-100 shadow-sx border rounded-md px-4 py-1 text-m my-2 focus:outline-none focus:ring-2"
+              className="font-extralight text-slate-50 border w-full bg-blue-900 hover:opacity-80 active:opacity-100 shadow-sx border rounded-md px-4 py-1 text-m my-2 focus:outline-none focus:ring-2"
               type="submit"
               value="登陆"
             />

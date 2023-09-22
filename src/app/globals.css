@@ -131,7 +131,7 @@ body {
 
 @layer base {
   input {
-    @apply font-light shadow border rounded w-full py-2 px-3 text-gray-700 text-sm font-light leading-tight active:ring-offset-2 hover:opacity-60 focus:ring-2 focus:ring-slate-700
+    @apply font-light rounded w-full py-2 px-3 text-gray-700 text-sm font-light leading-tight active:ring-offset-2 hover:opacity-60 focus:ring-2 focus:ring-slate-700
   }
   label {
     @apply block text-sm text-left mb-2 text-slate-800 font-light
@@ -142,8 +142,9 @@ body {
 }
 
 @layer utilities {
-  .flex-row-center {
+  .flex-center {
     @apply flex flex-row justify-center items-center
   }
+
 
 }
