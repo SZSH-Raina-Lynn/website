@@ -20,9 +20,9 @@ export default function Dashboard() {
   return (
     <ThemeProvider theme={theme}>
     <div>
-      <Subscribe />
+      {/* <Subscribe />
       <About />
-      <News />
+      <News /> */}
       <Contact />
       <Footer/>
     </div>
