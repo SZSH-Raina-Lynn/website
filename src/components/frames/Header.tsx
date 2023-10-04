@@ -2,9 +2,9 @@
 import { Stack,Button, Box, Link, AppBar, Toolbar, Container, IconButton, Menu, MenuItem } from "@mui/material";
 import Image from "next/image";
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState} from 'react';
+import React, { useState} from 'react';
 import "./Frames.css"
-import { navItems, socialItems } from "@/utility/data";
+import { navItems, socialItems } from "../../utility/data";
 
 export default function Header () {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);

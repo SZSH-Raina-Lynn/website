@@ -1,8 +1,8 @@
 import Image from "next/image"
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Alert, Button } from "@mui/material"
-import { addUser, sendWelcome } from "@/lib/api";
-import { useAppContext } from "@/components/AppContext";
+import { addUser, sendWelcome } from "../../../lib/api";
+import { useAppContext } from "../../../components/AppContext";
 
 export default function Subscribe () {
   const { alert, setAlert} = useAppContext()

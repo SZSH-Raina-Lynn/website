@@ -1,6 +1,7 @@
 import { Button, List, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
-import { partners, info } from '@/utility/data';
+import React from 'react';
+import { partners, info } from '../../utility/data';
 
 
 export default function Footer () {

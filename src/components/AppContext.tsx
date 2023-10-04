@@ -1,6 +1,6 @@
 'use client'
-import {createContext, useContext, useState} from 'react'
-import { AlertType } from '@/utility/types';
+import React, {createContext, useContext, useState} from 'react'
+import { AlertType } from '../utility/types';
 
 type StateType = {
   alert: AlertType;

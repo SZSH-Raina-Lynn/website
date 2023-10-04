@@ -1,8 +1,7 @@
-import { Stack } from '@mui/material'
-import Image from 'next/image'
-import type { Metadata } from 'next'
+import React from 'react'
 import { Inter } from 'next/font/google'
-import Header from '@/components/frames/Header'
+import Header from '../../components/frames/Header'
+
 const inter = Inter({ subsets: ['latin'] })
 
 

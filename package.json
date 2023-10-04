@@ -28,11 +28,8 @@
     "nodemailer": "^6.9.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-<<<<<<< HEAD
     "react-quill": "^2.0.0",
-=======
     "sharp": "^0.32.5",
->>>>>>> 9060c66407349399e57dc8f4941db3c427a80041
     "styled-components": "^5.3.11",
     "typescript": "5.2.2"
   },

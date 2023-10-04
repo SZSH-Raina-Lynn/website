@@ -1,5 +1,6 @@
 import { Typography, Stack } from "@mui/material"
 import Image from "next/image"
+import React from "react"
 const info = [
   {name: "商会地址", value: "8100 Boone Blvd, Suite 230, Vienna, VA 22182, USA "},
   {name: "邮箱", value: "dcszcc.org@gmail.com"},
