@@ -22,7 +22,7 @@ export const socialItems = [
 
 export const info = [
   {name: "商会地址", value: "8100 Boone Blvd, Suite 230, Vienna, VA 22182, USA "},
-  {name: "邮箱", value: "dcszcc.org@gmail.com"},
+  {name: "邮箱", value: "info@dcszcc.org"},
   {name: "微信", value:"690238933"}
 ]
 
