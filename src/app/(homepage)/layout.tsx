@@ -1,40 +1,33 @@
-"use client"
-import React, {useEffect} from 'react'
-import Header from '../../components/frames/Header'
-import { getAllNews, getPartners, getOpps } from '@/lib/api'
-import { useAppContext } from '@/components/AppContext'
+"use client";
+import React, { useEffect } from "react";
+
+import { getAllNews, getPartners, getOpps } from "@/lib/api";
+import { useAppContext } from "@/components/AppContext";
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
-  const {setNewsList, setPartners, setOpps} = useAppContext()
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const { setNewsList, setPartners, setOpps } = useAppContext();
   useEffect(() => {
     getAllNews()
       .then((res) => {
         if (res.data) {
-          setNewsList(res.data)
+          setNewsList(res.data);
         }
-        return getPartners()
+        return getPartners();
       })
       .then((partners) => {
         if (partners.data) {
-          setPartners(partners.data)
+          setPartners(partners.data);
         }
-        return getOpps()
+        return getOpps();
       })
       .then((opps) => {
         if (opps.data) {
-          setOpps(opps.data)
+          setOpps(opps.data);
         }
-      })
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
-  return (
-    <div>
-      <Header />
-      {children}
-
-    </div>
-  )
+      });
+  }, [setNewsList, setOpps, setPartners]);
+  return <div>{children}</div>;
 }
