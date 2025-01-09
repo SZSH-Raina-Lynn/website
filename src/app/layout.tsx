@@ -18,18 +18,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html
-      lang="cn"
+      lang="en"
       suppressHydrationWarning
       className={`${noto_serif_sc.variable}`}
     >
       <body className=" font-light text-sm">
         <Header />
-        <main>
+        <main style={{ marginTop: "64px" }}>
           <AppWrapper>{children}</AppWrapper>
         </main>
       </body>

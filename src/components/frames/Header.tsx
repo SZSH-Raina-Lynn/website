@@ -30,7 +30,7 @@ export default function Header() {
   };
 
   return (
-    <AppBar color="transparent" position="static">
+    <AppBar sx={{ background: "#D7DCDD" }} position="fixed">
       <Container maxWidth="xl" id="header">
         <Toolbar disableGutters sx={{ margin: 0 }}>
           <a href="/">

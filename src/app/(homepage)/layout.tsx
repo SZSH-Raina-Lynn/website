@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-
 import { getAllNews, getPartners, getOpps } from "@/lib/api";
 import { useAppContext } from "@/components/AppContext";
 export default function RootLayout({
